@@ -116,7 +116,7 @@ def make_request(encrypt, server_name, token):
     try:
         if server_name == "IND":
             url = "https://client.ind.freefiremobile.com/GetPlayerPersonalShow"
-        elif server_name in {"BR", "US", "SAC", "NA"}:
+        elif server_name in {"RU", "CIS", "SAC", "NA"}:
             url = "https://client.us.freefiremobile.com/GetPlayerPersonalShow"
         else:
             url = "https://clientbp.ggpolarbear.com/GetPlayerPersonalShow"
@@ -209,7 +209,7 @@ def handle_requests():
         # Determine URL based on server
         if server_name == "IND":
             url = "https://client.ind.freefiremobile.com/LikeProfile"
-        elif server_name in {"BR", "US", "SAC", "NA"}:
+        elif server_name in {"RU", "CIS", "SAC", "NA"}:
             url = "https://client.us.freefiremobile.com/LikeProfile"
         else:
             url = "https://clientbp.ggpolarbear.com/LikeProfile"
